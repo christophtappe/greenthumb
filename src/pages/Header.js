@@ -1,13 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import blattIcon from '../icons/014-tropisch-color.svg'
-
 
 function Header() {
     return (
         <HeaderStyled>
           <h1>GreenThumb</h1>
-          <img src={blattIcon} alt=" "/>
+          <img src={'./icons/014-tropisch-color.svg'} alt=" "/>
         </HeaderStyled>
     );
 }
@@ -30,11 +28,9 @@ const HeaderStyled = styled.section`
   img {
     display: inline-flex;
     width: 35px;
-    color: #d4d4c9;
-    
-
-}
-  `
+    color: #d4d4c9;  
+  }
+`
 
 export default Header;
  
