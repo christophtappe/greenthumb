@@ -1,23 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 import Card from './Card' 
-import wasserIcon from '../icons/012-wasser.svg'
-
+import workData from './workData'
 
 export default function Cards() {
-
-
-
   return (
+
     <Containerall> 
-    <CardContainer>
-      <Card aufgabe=" Bitte Blumen gießen" motivation="Es könnte heute warm werden:" src={wasserIcon} als="" />
-      <Card aufgabe="Kompost lockern" motivation="Die Erdbeeren freuen sich schon:"/>
-      <Card aufgabe="Heute Rasen mähen" motivation="Lust auf ein Picknick?"/>
-      <Card aufgabe="Hecke schneiden" motivation="Muß auch mal sein:" />
-      <Card aufgabe="Zaun streichen" motivation="Was sollen denn die Nachbarn denken:" />
-   
-    </CardContainer>
+      <CardContainer>
+        {workData.map(task => {
+          return <Card task={task} />
+        })}
+      </CardContainer>
     </Containerall>
   )
 }
@@ -33,7 +27,4 @@ const Containerall = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-
-
 `

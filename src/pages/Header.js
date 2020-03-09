@@ -6,11 +6,11 @@ import blattIcon from '../icons/014-tropisch-color.svg'
 function Header() {
     return (
         <HeaderStyled>
-<h1>GreenThumb</h1>
-<img src={blattIcon} alt=" "/>
+          <h1>GreenThumb</h1>
+          <img src={blattIcon} alt=" "/>
         </HeaderStyled>
     );
-  }
+}
 
 
 

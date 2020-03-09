@@ -9,12 +9,9 @@ function App() {
 
   return (
     <div className="App">
-
     <Header />
     <Cards />
     <Footer />
-  
-     
     </div>
   );
 }
