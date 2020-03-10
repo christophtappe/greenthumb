@@ -14,6 +14,7 @@ function App() {
     <Header />
     <Cards />
     <Form/>
+    <Greenthumb />
     <Footer />
     </div>
   );

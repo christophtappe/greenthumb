@@ -6,13 +6,13 @@ import workData from './workData'
 export default function Cards() {
   return (
 
-    <Containerall> 
+/*    <Containerall> */
       <CardContainer>
         {workData.map(task => {
           return <Card task={task} />
         })}
       </CardContainer>
-    </Containerall>
+ /*   </Containerall> */
   )
 }
 
@@ -22,9 +22,8 @@ const CardContainer = styled.div`
   overflow-y: scroll;
 `
 
-const Containerall = styled.div`
+/*const Containerall = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-`
+`*/
