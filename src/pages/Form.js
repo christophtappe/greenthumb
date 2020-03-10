@@ -1,17 +1,20 @@
 import React, { useState } from 'react'
 
-export default function CardForm({ onAdd }) {
-    const [workData, setworkData] = useState({});
+const Form = ({ onAdd }) => {
+    const [workData, setworkData] = useState({
+        motivation: '',
+        aufgabe: ''
+    });
 
     function save (event) {
         event.preventDefault();
-        onAdd({id: 8, aufgab: 'aufgabe', motivatio: 'afegwsak'})
+//        onAdd({id: 8, aufgabe: workData.aufgabe, motivation: workData.motivation})
     }
 
     return (
         <form> 
-            <input type="text" name= {motivation}/>
-            <input type="text" name={aufgabe}/>
+            <input type="text" name="motivation" value={workData.motivation} onChange={e => setworkData({...workData, motivation: e.target.value})}/>
+            <input type="text" name="aufgabe" value={workData.aufgabe} onChange={e => setworkData({...workData, aufgabe: e.target.value})}/>
            
             <input type="checkbox"/>
             <input type="submit" value="senden" onClick={save}/>
@@ -19,3 +22,5 @@ export default function CardForm({ onAdd }) {
         </form>
     )
 }
+
+export default Form
