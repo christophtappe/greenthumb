@@ -34,7 +34,6 @@ const CardStyled = styled.section`
 
   p {
     color: #5E918e;
-    
   }
 
   h1 {
@@ -42,8 +41,6 @@ const CardStyled = styled.section`
       font-size: 1.2rem;
       margin-top: 0px;
       margin-bottom: 6px;
-      text-algin: center;
-      
   }
 
   h3 {
@@ -60,10 +57,8 @@ const CardStyled = styled.section`
     color: #d53f63;
   }
 
-
   img {
-      float: left; 
-      display: inline; 
+      float: left;       
       width: 20%;
       margin-right: 15px;
   }
@@ -74,6 +69,7 @@ const CardStyled = styled.section`
     top: 150px;
     width: 240px;
   }
+  
   div { 
     display: flex;
     flex-direction: row;

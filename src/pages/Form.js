@@ -39,6 +39,7 @@ const Form = ({ onAdd }) => {
             </div>
             <h4>Alles klar? Dann:</h4>
             <input className="button" type="submit" value="senden" onClick={save}/>
+            <img src="./icons/99-chrissie.svg" alt=""/>
         </FormStyled> 
         </form>
         </>

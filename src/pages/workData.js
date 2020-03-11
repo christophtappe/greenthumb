@@ -26,7 +26,7 @@ const workData = [
     {
         id: 5,
         motivation: 'Nachwuchs gewünscht?',
-        aufgabe: 'Wer ernten will...!',
+        aufgabe: 'Samen aussäen ...',
         icon: './icons/05-seed.svg',
     },
     {

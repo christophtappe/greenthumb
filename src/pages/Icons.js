@@ -15,6 +15,8 @@ const Icons = [
     },
     {   icon: './icons/08-tulpen.svg',
     },
+    {   icon: './icons/user-chrissie.svg',
+    },
 ]
 
 export default Icons

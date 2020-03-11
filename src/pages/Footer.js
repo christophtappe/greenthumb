@@ -5,10 +5,10 @@ function Footer() {
     return (
         <FooterStyled>
             <img src={'./icons/home.svg'} alt="Home"/>
-            {/* <img src={'./icons/settings.svg'} alt="Settings"/>
+            <img src={'./icons/settings.svg'} alt="Settings"/>
             <img src={'./icons/user.svg'} alt="User"/>
             <img src={'./icons/thumb.svg'} alt="Home"/>
-            <img src={'./icons/foto.svg'} alt="Home"/> */}
+            <img src={'./icons/foto.svg'} alt="Home"/>
         </FooterStyled>
     );
 }
