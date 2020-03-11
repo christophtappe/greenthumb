@@ -9,7 +9,7 @@ const workData = [
         id: 2,
         motivation: 'Die Erdbeeren freuen sich schon:',
         aufgabe: 'Kompost lockern.',
-        icon: './icons/02-wasser.svg',
+        icon: './icons/02-schaufel.svg',
     },
     {
         id: 3,
