@@ -18,7 +18,7 @@ const Form = ({ onAdd }) => {
         <>
         <form>
         <FormStyled>
-        <h1>Schreib' Deinem Garten <br/>ein paar nette Karten:</h1>
+        <h1>Schreibe Deinem Garten – <br/>ein paar nette Karten:</h1>
             <p>Motivation:</p>
             <input className="field" type="text" name="motivation"
                 onChange={e => setFormValue({...formValue, motivation: e.target.value})}/>
@@ -53,11 +53,13 @@ const FormStyled = styled.section`
     background: #e6eddf;
     margin: auto;
     width: 80%;
-    height: 100vh;
+    height: 60vh;
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: -40px;
+    margin-top: 50px;
+    margin-bottom: 40px;
     padding-left: 25px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.4);
 
 .field {
     width: 80%;

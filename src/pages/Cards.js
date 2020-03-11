@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import Card from './Card' 
+import Card from './Card'
 import workData from './workData'
-import Form from './Form'
+import Form from './Form' 
 
 
 export default function Cards() {
