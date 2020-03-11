@@ -14,7 +14,7 @@ export default function Card({ task }) {
       <h1 className={isGreen ? 'green' : ''}>{task.aufgabe}</h1> 
       <div className="checkbox-group"></div>
       <button onClick={change}>Erledigt? Klicken! </button>
-    </CardStyled > 
+    </CardStyled >  
   )
 }
 
@@ -62,7 +62,6 @@ const CardStyled = styled.section`
 
 
   img {
-    
       float: left; 
       display: inline; 
       width: 20%;

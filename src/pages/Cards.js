@@ -1,16 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import Card from './Card' 
 import workData from './workData'
+import Form from './Form'
+
 
 export default function Cards() {
+  const [tasks, setTasks] = useState(workData);
+
+  function onAdd(newTask) {
+    setTasks([...tasks, newTask])
+  }
+
   return (
 
 /*    <Containerall> */
       <CardContainer>
-        {workData.map(task => {
+        {tasks.map(task => {
           return <Card task={task} />
         })}
+        <Form onAdd={onAdd}/>
       </CardContainer>
  /*   </Containerall> */
   )
