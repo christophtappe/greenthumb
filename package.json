@@ -9,6 +9,7 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-grid-system": "6.2.4",
+    "react-router-dom": "5.1.2",
     "react-scripts": "3.4.0",
     "react-svg": "11.0.12",
     "styled-components": "5.0.1",
