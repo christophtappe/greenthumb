@@ -7,13 +7,13 @@ function Nav() {
       <nav>
         <FooterStyled>
           <Link to='/Cards'>
-          <img src={'../icons/home.svg'} alt="Home"/>
+          <img className='imgsize' src={'../icons/home.svg'} alt="Home"/>
           </Link>
           <Link to='/Form'>
           <img src={'../icons/settings.svg'} alt="Settings"/>
           </Link>
           <Link to='Cards'> 
-          <img className='imgsize'src={'../icons/icon-chrissie-new.svg'} alt="User"/>
+          <img className='imgsize' src={'../icons/99-chrissie.svg'} alt="User"/>
           </Link>
           <Link to='/Greenthumb'>
           <img src={'../icons/thumb.svg'} alt="Greenthumb"/>
@@ -41,7 +41,7 @@ const FooterStyled = styled.section`
 
     img {
         display: inline-flex;
-        align-items: bottom;
+        align-items: baseline;
         width: 40px;   
     }
 
