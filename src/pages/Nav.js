@@ -1,14 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 function Nav() {
     return (
       <nav>
         <FooterStyled>
+          <Link to='/Cards'>
           <img src={'./icons/home.svg'} alt="Home"/>
+          </Link>
+          <Link to='/Cards'>
           <img src={'./icons/settings.svg'} alt="Settings"/>
+          </Link>
+          <Link to='Cards'> 
           <img src={'./icons/user.svg'} alt="User"/>
-          <img src={'./icons/thumb.svg'} alt="Home"/>
+          </Link>
+          <Link to='/Greenthumb'>
+          <img src={'./icons/thumb.svg'} alt="Greenthumb"/>
+          </Link>
           <img src={'./icons/foto.svg'} alt="Home"/>
         </FooterStyled>        
       </nav>
