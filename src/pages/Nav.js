@@ -9,7 +9,7 @@ function Nav() {
           <Link to='/Cards'>
           <img src={'./icons/home.svg'} alt="Home"/>
           </Link>
-          <Link to='/Cards'>
+          <Link to='/Form'>
           <img src={'./icons/settings.svg'} alt="Settings"/>
           </Link>
           <Link to='Cards'> 
