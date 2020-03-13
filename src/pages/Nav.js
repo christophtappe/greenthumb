@@ -42,7 +42,7 @@ const FooterStyled = styled.section`
     img {
         display: inline-flex;
         align-items: bottom;
-        width: 4px;   
+        width: 40px;   
     }
 
     .imgsize {
