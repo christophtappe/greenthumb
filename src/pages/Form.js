@@ -1,9 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-export default function Form({
-    
-})
 
 const Form = ({ onAdd }) => {
     const [formValue, setFormValue] = useState({
@@ -17,8 +14,6 @@ const Form = ({ onAdd }) => {
             motivation: formValue.motivation, aufgabe: formValue.aufgabe, }
         onAdd(newTask)
     }
-
-  
 
     return (
         <>
@@ -67,7 +62,7 @@ const Form = ({ onAdd }) => {
     )
 }
 
-
+export default Form
 
 const FormStyled = styled.section`
     background: #e6eddf;
