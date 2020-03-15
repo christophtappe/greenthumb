@@ -18,8 +18,6 @@ export default function Card({ task }) {
   )
 }
 
-
-
 const CardStyled = styled.section`
   background: #e6eddf;
   margin: auto;

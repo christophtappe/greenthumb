@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const Form = ({ onAdd }) => {
     const [formValue, setFormValue] = useState({
-        motivation: 'd',
+        motivation: '',
         aufgabe: ''
     });
 
