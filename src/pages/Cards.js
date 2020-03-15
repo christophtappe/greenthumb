@@ -13,15 +13,14 @@ export default function Cards() {
   }
 
   return (
-
-/*    <Containerall> */
+    <>
       <CardContainer>
         {tasks.map(task => {
           return <Card task={task} />
         })}
         <Form onAdd={onAdd}/>
       </CardContainer>
- /*   </Containerall> */
+    </>
   )
 }
 

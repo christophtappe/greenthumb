@@ -1,30 +1,48 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
+export default function Form({
+    
+})
 
 const Form = ({ onAdd }) => {
     const [formValue, setFormValue] = useState({
-        motivation: '',
+        motivation: 'd',
         aufgabe: ''
     });
 
-    function save (event) {
+    function save (event) { 
         event.preventDefault();
-        const newTask = {id: Math.floor(Math.random()* 300000), motivation: formValue.motivation, aufgabe: formValue.aufgabe, }
+        const newTask = {id: Math.floor(Math.random()* 300000), 
+            motivation: formValue.motivation, aufgabe: formValue.aufgabe, }
         onAdd(newTask)
     }
+
+  
 
     return (
         <>
         <form>
         <FormStyled>
+            <h1>{formValue.motivation}</h1>
         <h1>Schreibe Deinem Garten – <br/>ein paar nette Karten:</h1>
+
             <p>Motivation:</p>
-            <input className="field" type="text" name="motivation"
+            <input 
+                className="field" 
+                type="text" 
+                name="motivation" 
+                placeholder="Was motiviert dich zu dieser Aufgabe?"
                 onChange={e => setFormValue({...formValue, motivation: e.target.value})}/>
+
             <p>Aufgabe:</p>
-            <input className="field" type="text" name="aufgabe"
-                onChange={e => setFormValue({...formValue, aufgabe: e.target.value})}/>    
+            <input 
+                className="field" 
+                type="text" 
+                name="aufgabe" 
+                placeholder="Was packst Du als nächstes an?"
+                onChange={e => setFormValue({...formValue, aufgabe: e.target.value})}/>
+
             <p>Bitte passendes Icon auswählen:</p>
             <div>
             <img src='./icons/06-carrot.svg' alt=" "/>
@@ -38,14 +56,17 @@ const Form = ({ onAdd }) => {
             
             </div>
             <h4>Alles klar? Dann:</h4>
-            <input className="button" type="submit" value="senden" onClick={save}/>
+            <input 
+                className="button" 
+                type="submit" 
+                value="senden" 
+                onClick={save}/>
         </FormStyled> 
         </form>
         </>
     )
 }
 
-export default Form
 
 
 const FormStyled = styled.section`

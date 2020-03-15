@@ -20,9 +20,13 @@ const HeaderStyled = styled.section`
 
   h1 {
     color: #d4d4c9;
-    font-style: italic;
-    padding-right: 8px;
+    font-size: 30px;
+    font-family: 'Acme';
+    padding-right: 5px;
+  }
 
+  span {
+    font-size: 18px;
   }
 
   img {
