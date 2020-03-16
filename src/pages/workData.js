@@ -1,15 +1,15 @@
 const workData = [
     { 
         id: 1,
-        motivation: 'Es könnte heute warm werden!',
-        aufgabe: 'Bitte Blumen gießen.',
-        icon: './icons/01-wasser.svg',
+        motivation: 'Was machen eigentlich die Nachbarn?!',
+        aufgabe: 'Schneide die Hecke.',
+        icon: './icons/04-schere.svg',
     },
     {
         id: 2,
-        motivation: 'Die Erdbeeren freuen sich schon:',
-        aufgabe: 'Kompost lockern.',
-        icon: './icons/02-schaufel.svg',
+        motivation: 'Nachwuchs gewünscht?',
+        aufgabe: 'Samen aussäen ...',
+        icon: './icons/05-seed.svg',
     },
     {
         id: 3,
@@ -19,15 +19,16 @@ const workData = [
     },
     {
         id: 4,
-        motivation: 'Was machen eigentlich die Nachbarn?',
-        aufgabe: 'Schneide die Hecke.',
-        icon: './icons/04-schere.svg',
+        motivation: 'Es könnte heute warm werden',
+        aufgabe: 'Bitte Blumen gießen.',
+        icon: './icons/01-wasser.svg',
+        
     },
     {
         id: 5,
-        motivation: 'Nachwuchs gewünscht?',
-        aufgabe: 'Samen aussäen ...',
-        icon: './icons/05-seed.svg',
+        motivation: 'Die Erdbeeren freuen sich schon:',
+        aufgabe: 'Kompost lockern.',
+        icon: './icons/02-schaufel.svg',
     },
     {
         id: 6,

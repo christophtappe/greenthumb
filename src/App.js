@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Greenthumb from './pages/Greenthumb'
 import Foto from './pages/Foto'
 import Form from './pages/Form'
+import User from './pages/User'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 
@@ -15,14 +16,11 @@ function App() {
     <Router>
       <div className="App">
       <Header />
-    
-        <p>Wetter</p>
-     
-       
         <Nav />
         <Switch>
           <Route path="/" exact component={Cards} />
           <Route path="/cards" exact component={Cards} />
+          <Route path="/user" exact component={User} />
           <Route path="/greenthumb" component={Greenthumb} />
           <Route path="/form" component={Form} />
           <Route path="/fotos" component={Foto} />

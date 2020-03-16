@@ -4,8 +4,10 @@ import styled from 'styled-components'
 function Header() {
     return (
         <HeaderStyled>
-          <h1>GreenThumb</h1>
-          <img src={'./icons/014-tropisch-color.svg'} alt=" "/>
+          
+        
+          <img src={'../icons/Logo_Greenthumb.png'} alt='' />
+       
         </HeaderStyled>
     );
 }
@@ -14,9 +16,19 @@ function Header() {
 
 const HeaderStyled = styled.section` 
     display: flex;
-    justify-content: center;
+    height: 80px;
+    
     background: #5e918e;
     box-shadow: 0 5px 5px -5px #424235;
+
+    img {
+    width: 200px;
+    
+    margin: auto;  
+
+  }
+
+   
 
   h1 {
     color: #d4d4c9;
@@ -29,11 +41,7 @@ const HeaderStyled = styled.section`
     font-size: 18px;
   }
 
-  img {
-    display: inline-flex;
-    width: 35px;
-    color: #d4d4c9;  
-  }
+
 `
 
 export default Header;
