@@ -6,7 +6,7 @@ function Header() {
         <HeaderStyled>
           
         
-          <img src={'../icons/Logo_Greenthumb.png'} alt='' />
+          <img src={'../icons/Logo_Greenthumb_Rot.png'} alt='' />
        
         </HeaderStyled>
     );

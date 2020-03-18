@@ -1,14 +1,14 @@
 const workData = [
     { 
         id: 1,
-        motivation: 'Was machen eigentlich die Nachbarn?!',
-        aufgabe: 'Schneide die Hecke.',
+        motivation: 'Was machen eigentlich die Nachbarn?',
+        aufgabe: 'Schneide mal die Hecke.',
         icon: './icons/04-schere.svg',
     },
     {
         id: 2,
         motivation: 'Nachwuchs gewünscht?',
-        aufgabe: 'Samen aussäen ...',
+        aufgabe: 'Bitte Samen aussäen ...',
         icon: './icons/05-seed.svg',
     },
     {
@@ -19,7 +19,7 @@ const workData = [
     },
     {
         id: 4,
-        motivation: 'Es könnte heute warm werden',
+        motivation: 'Es könnte heute warm werden:',
         aufgabe: 'Bitte Blumen gießen.',
         icon: './icons/01-wasser.svg',
         
