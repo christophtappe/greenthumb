@@ -4,20 +4,17 @@ import styled from 'styled-components'
 export default function User() {
     return (
     <>
-        <div className='container'>
+    <CardStyled>
+        <div className="container">
             <div className="f1">
-                <h3>Box 1</h3>
+               
+                <img src={'../icons/user-icon-chrissie.svg'}/>
             </div>
             <div className="f2">
                 <h3>Box 2</h3>
             </div>
-            <div className="f3">
-                <h3>Box 3</h3>
-            </div>
-            <div className="f4">
-                <h3>Box 4</h3>
-            </div>
         </div>
+        </CardStyled>
     </>
 
   
@@ -25,35 +22,36 @@ export default function User() {
 }
 
 const CardStyled = styled.section`
-  background: #e6eddf;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 0px;
   width: 80%;
+  
 
 .container { 
-    width: 70vh;
-    height: 50vh;
+    width: 100%;
     display: grid;
-    grid-template-columns: 40% 20% 40%;
-    grid-template-rows: 35% 30% 35%;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 1fr 1fr;
 
   }
  
   .f1 {
-    background-color: yellow;
-    grid-column-start: span 1;
-    grid-column-end: span 3;
-    grid-row-start: span 1;
-    grid-row-end: span 2;
+    background-color: ;
+    grid-column-start:  1;
+    grid-column-end:  2;
+    grid-row-start:  1;
+    grid-row-end:  3;
+    align-self: stretch;
+
   }
 
   .f2 {
     background-color: orange;
-    grid-column-start: span 3;
-    grid-column-end: span 4;
-    grid-row-start: span 1;
-    grid-row-end: span 3;
+    grid-column-start:  2;
+    grid-column-end:  3;
+    grid-row-start:  1;
+    grid-row-end:  3;
   }
 
   .f3 {
@@ -70,6 +68,10 @@ const CardStyled = styled.section`
     grid-column-end: span 4;
     grid-row-start: span 3;
     grid-row-end: span 4;
+  }
+
+  img {
+      width: 200px;
   }
     `
 
