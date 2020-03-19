@@ -3,9 +3,15 @@ import styled from 'styled-components'
 
 export default function Card({ task }) {
   const [isGreen, setGreen] = useState(false);
+  const [count, setCount] = useState(0);
   const change = () => {
     setGreen(!isGreen);
+  }
+  const increment = () => {
+    setCount(count + 1);
   };
+
+  
 
   return (
     <CardStyled >
@@ -17,10 +23,10 @@ export default function Card({ task }) {
     <img src={task.icon} alt=" "/>
     </div>
     <div className="f3">
-    <h1 className={isGreen ? 'green' : ''}>{task.aufgabe}</h1> 
+    <h1 className={isGreen ? 'green' : ''}>{task.aufgabe}{count}</h1> 
     </div>
     <div className="f4">
-    <button className="Button" onClick={change}>Erledigt? Klicken! </button>
+    <button className="Button" onClick={() =>{ change(); increment();}}>Erledigt? Klicken! </button>
 
     </div>
     </div>
@@ -89,6 +95,7 @@ const CardStyled = styled.section`
   }
 
   p {
+    font-family: 'Roboto';
     color: #5E918e;
   }
 

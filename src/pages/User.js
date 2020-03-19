@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from './Card'
 import styled from 'styled-components'
 
 export default function User() {
@@ -7,12 +8,19 @@ export default function User() {
     <CardStyled>
         <div className="container">
             <div className="f1">
-               
                 <img src={'../icons/user-icon-chrissie.svg'}/>
             </div>
             <div className="f2">
-                <h3>Box 2</h3>
+                <h3>Der Hobbygärtner</h3>
+                <p>Name: <b>Christoph</b></p>
+                <p>Gartengröße: <b>960 qm</b></p>
+                <p>Lieblingsblume: <b>Cosmea</b></p>  
+                <p className='size'>(latein.: Cosmos bipinnatus; dt: Schmuckkörbchen)</p>
+                <p>Lieblingsobst: <b>Apfel</b></p>
+    <p>Lieblingspflanze: <b>Funkie 'Big Daddy'</b></p>
+                <p className='size'>(latein.: Hosta sieboldiana, Blaublatt-Funkie)</p>
             </div>
+            <h3> Du hast bisher Aufgaben erfüllt.</h3>
         </div>
         </CardStyled>
     </>
@@ -25,13 +33,13 @@ const CardStyled = styled.section`
   margin: auto;
   margin-top: 20px;
   margin-bottom: 0px;
-  width: 80%;
+  width: 100%;
   
 
 .container { 
     width: 100%;
     display: grid;
-    grid-template-columns: 4fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 
   }
@@ -42,16 +50,18 @@ const CardStyled = styled.section`
     grid-column-end:  2;
     grid-row-start:  1;
     grid-row-end:  3;
-    align-self: stretch;
+    margin: 0;
+    
 
   }
-
   .f2 {
-    background-color: orange;
+    background-color: ;
     grid-column-start:  2;
     grid-column-end:  3;
     grid-row-start:  1;
     grid-row-end:  3;
+    margin-right: 10px;
+    margin-left: -8px;
   }
 
   .f3 {
@@ -71,7 +81,39 @@ const CardStyled = styled.section`
   }
 
   img {
-      width: 200px;
+      height: 190px;
+      margin-top: 15px;
+  }
+
+  h3 {
+    color: #6b9e52;
+    font-size: 0.8rem;
+  }
+
+h4 {
+    color: #6b9e52;
+    font-size: 0.8rem;
+  }
+
+.green {
+    color: #6b9e52;
+  }
+
+.red {
+    color: #d53f63;
+  }
+  p {
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .size {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-size: 10px;
+    line-height: 9px;
+    margin-top: -5px;
   }
     `
 

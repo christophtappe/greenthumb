@@ -24,6 +24,7 @@ const Form = ({ onAdd }) => {
 
             <p>Motivation:</p>
             <input 
+                maxLength="38"
                 className="field" 
                 type="text" 
                 name="motivation" 
@@ -32,6 +33,7 @@ const Form = ({ onAdd }) => {
 
             <p>Aufgabe:</p>
             <input 
+                maxLength="25"
                 className="field" 
                 type="text" 
                 name="aufgabe" 
