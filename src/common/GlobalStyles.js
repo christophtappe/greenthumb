@@ -8,7 +8,7 @@ export default createGlobalStyle`
   body {
     margin: 0px;
     background: #d4d4c9;
-    font-family: sans-serif;
+    font-family: 'Asap';
     font-size: 18px;
     line-height: 1.4;
     height: 100vh;

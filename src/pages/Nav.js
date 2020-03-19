@@ -7,7 +7,7 @@ function Nav() {
       <nav>
         <FooterStyled>
           <Link to='/Cards'>
-          <img className='imgsize' src={'../icons/home.svg'} alt="Home"/>
+          <img className='imgsize' src={'../icons/home_klick.svg'} alt="Home"/>
           </Link>
           <Link to='/Form'>
           <img src={'../icons/settings.svg'} alt="Settings"/>
@@ -46,7 +46,7 @@ const FooterStyled = styled.section`
     }
 
     .imgsize {
-        width: 50px;
+        width: 45px;
     }
 `
 export default Nav;

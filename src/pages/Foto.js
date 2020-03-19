@@ -3,12 +3,16 @@ import styled from 'styled-components'
 
 export default function Foto() {
     return (
-            <FotoLayer>
-                
-            <h2>Zeige Deinen Garten von seiner schönsten Seite:</h2>
+        <FotoLayer>
+                <div className="container">
+                    <div className="main">
+            <h3>Zeige Deinen Garten von seiner schönsten Seite:</h3>
+                </div>
+            
             <p>Auch im stürmischen Herbst oder im regnerischen Winter findest Du hier Deinen Platz an der Sonne.
                 Vorausgesetzt, Du hast Deinen Garten verschönert! Und ein paar eindrucksvolle Vorher-Nachher-Fotos hochgeladen.
             </p>
+            </div> 
                 
                     <h3>Das Paradies.</h3>
                     <img src="IMG_0402.jpg" alt=""/>
@@ -30,15 +34,30 @@ const FotoLayer = styled.section`
     border-radius: 5px;
     overflow-y: scroll;
 
-div {
-   display: flex;
-    flex-wrap: wrap;
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
     margin: auto;
-    justify-content: center;
+}
+
+.main {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.icon {
+    grid-column-start: 2;
+    grid-column-edn: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
 
 p {
-    font-size: 14px;
+    font-size: 12px;
+    color: #333333;
 }
     
 
