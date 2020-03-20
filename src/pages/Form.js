@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-
-const Form = ({ onAdd }) => {
+export default function Form ({ onAdd }) {
     const [formValue, setFormValue] = useState({
         motivation: '',
         aufgabe: ''
@@ -19,7 +18,7 @@ const Form = ({ onAdd }) => {
         <>
         <form>
         <FormStyled>
-            <h1>{formValue.motivation}</h1>
+            
         <h1>Schreibe Deinem Garten – <br/>ein paar nette Karten:</h1>
 
             <p>Motivation:</p>
@@ -64,7 +63,7 @@ const Form = ({ onAdd }) => {
     )
 }
 
-export default Form
+
 
 const FormStyled = styled.section`
     background: #e6eddf;

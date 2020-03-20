@@ -17,11 +17,11 @@ export default function User() {
                 <p>Lieblingsblume: <b>Cosmea</b></p>  
                 <p className='size'>(latein.: Cosmos bipinnatus; dt: Schmuckkörbchen)</p>
                 <p>Lieblingsobst: <b>Apfel</b></p>
-    <p>Lieblingspflanze: <b>Funkie 'Big Daddy'</b></p>
+                <p>Lieblingspflanze: <b>Funkie 'Big Daddy'</b></p>
                 <p className='size'>(latein.: Hosta sieboldiana, Blaublatt-Funkie)</p>
             </div>
-            <h3> Du hast bisher Aufgaben erfüllt.</h3>
         </div>
+        <h3 className="headline">Du hast bisher -?- Aufgaben erfüllt.</h3>
         </CardStyled>
     </>
 
@@ -85,9 +85,13 @@ const CardStyled = styled.section`
       margin-top: 15px;
   }
 
-  h3 {
+h3 {
     color: #6b9e52;
     font-size: 0.8rem;
+}
+    
+.headline { 
+  text-align: center;
   }
 
 h4 {

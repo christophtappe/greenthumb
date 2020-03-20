@@ -1,24 +1,18 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import Card from './Card'
-import workData from './workData'
-import Form from './Form' 
 
 
-export default function Cards() {
-  const [tasks, setTasks] = useState(workData);
 
-  function onAdd(newTask) {
-    setTasks([...tasks, newTask])
-  }
+export default function Cards({tasks, setDone}) {
+ console.log(tasks)
 
   return (
     <>
       <CardContainer>
         {tasks.map(task => {
-          return <Card task={task} />
+          return <Card key={task.id} task={task} setDone={setDone} />
         })}
-        <Form onAdd={onAdd}/>
       </CardContainer>
     </>
   )

@@ -1,20 +1,12 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-export default function Card({ task }) {
-  const [isGreen, setGreen] = useState(false);
-  const [count, setCount] = useState(0);
-  const change = () => {
-    setGreen(!isGreen);
-  }
-  const increment = () => {
-    setCount(count + 1);
-  };
-
+export default function Card({ task, setDone }) {
   
 
+
   return (
-    <CardStyled >
+    <CardStyled done={task.done} >
       <div className="container">
       <div className="f1">
     <h3 className>{task.motivation}</h3>
@@ -23,24 +15,13 @@ export default function Card({ task }) {
     <img src={task.icon} alt=" "/>
     </div>
     <div className="f3">
-    <h1 className={isGreen ? 'green' : ''}>{task.aufgabe}{count}</h1> 
+    <h1>{task.aufgabe}</h1> 
     </div>
     <div className="f4">
-    <button className="Button" onClick={() =>{ change(); increment();}}>Erledigt? Klicken! </button>
-
+    <button className="Button" onClick={() => setDone(task.id)}>Erledigt? Klicken! </button>
     </div>
     </div>
   </CardStyled >  
-
-  /*
-    <CardStyled >
-      <h3>{task.motivation}</h3>
-      <img src={task.icon} alt=" "/>
-      <h1 className={isGreen ? 'green' : ''}>{task.aufgabe}</h1> 
-      <div className="checkbox-group"></div>
-      <button onClick={change}>Erledigt? Klicken! </button>
-    </CardStyled >  
-    */
   )
 }
 
@@ -101,8 +82,8 @@ const CardStyled = styled.section`
 
   h1 {
       margin-top: -5px;
-      margin-bottom: -1px;
-      color: #d53f63;
+      margin-bottom: -1px; 
+      color: ${(props) => props.done ? '#6b9e52' : '#d53f63' };
       font-size: 20px;
       font-weight: 600;
       line-height: 22px;

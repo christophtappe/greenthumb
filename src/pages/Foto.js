@@ -4,20 +4,21 @@ import styled from 'styled-components'
 export default function Foto() {
     return (
         <FotoLayer>
-                <div className="container">
-                    <div className="main">
-            <h3>Zeige Deinen Garten von seiner schönsten Seite:</h3>
+            <div className="container">
+                <div className="main">
+                    <h3>Zeige Deinen Garten von seiner schönsten Seite.</h3>
                 </div>
-            
-            <p>Auch im stürmischen Herbst oder im regnerischen Winter findest Du hier Deinen Platz an der Sonne.
-                Vorausgesetzt, Du hast Deinen Garten verschönert! Und ein paar eindrucksvolle Vorher-Nachher-Fotos hochgeladen.
-            </p>
+            <div className="text">
+                <p>Auch im stürmischen Herbst oder im regnerischen Winter findest Du hier Deinen Platz an der Sonne.
+                    Vorausgesetzt, Du hast Deinen Garten verschönert! Und ein paar eindrucksvolle Vorher-Nachher-Fotos hochgeladen.
+                </p>
+            </div>
             </div> 
                 
-                    <h3>Das Paradies.</h3>
+            <h4>Das Paradies.</h4>
+                <div>
                     <img src="IMG_0402.jpg" alt=""/>
-               
-                
+                </div>   
             </FotoLayer>
     )
 }
@@ -30,22 +31,29 @@ const FotoLayer = styled.section`
     margin-top: 20px;
     margin-bottom: 150px;
     width: 90%;
-    height: 150%;
+
     border-radius: 5px;
     overflow-y: scroll;
 
 .container {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin: auto;
 }
 
 .main {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+}
+
+.text {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start:2;
+    grid-row-end:3;
 }
 
 .icon {
@@ -59,13 +67,12 @@ p {
     font-size: 12px;
     color: #333333;
 }
-    
-
-    img {
-        width: 80%;
+ 
+img {
+        width: 60%;
         border: 8px solid white;
         box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.4);
-        transform: rotate(3deg);
+        transform: rotate(-3deg);
         
     }
 
@@ -76,6 +83,8 @@ p {
 
     h4 {
         text-align: center;
+        color: #333333;
+        margin-top: -10px;
     }
 
 

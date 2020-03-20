@@ -6,7 +6,7 @@ function Nav() {
     return (
       <nav>
         <FooterStyled>
-          <Link to='/Cards'>
+          <Link to='/'>
           <img className='imgsize' src={'../icons/home_klick.svg'} alt="Home"/>
           </Link>
           <Link to='/Form'>

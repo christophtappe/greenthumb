@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-export default function Greenthumb() {
+export default function Greenthumb({taskCount, taskDoneCount }) {
+    console.log(taskDoneCount)
     return (
         <div>
             <ThumbCard>
             <div className="card">
             <h3>Grüner Daumen in Sicht:</h3>
             <img src={'./icons/thumb.svg'} alt=""/>
-            <h4>Noch x Aufgaben - dann hast du es geschafft:</h4>
+            <h4>Noch {taskCount} Aufgaben - dann hast du es geschafft:</h4>
             <div className="card-gradient"></div>
             </div>
             </ThumbCard>
