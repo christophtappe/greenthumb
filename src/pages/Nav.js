@@ -39,13 +39,13 @@ const FooterStyled = styled.section`
     background: #c1c1a0;
     box-shadow: 0 -5px 5px -5px #424235;
 
-    img {
+img {
         display: inline-flex;
         align-items: baseline;
         width: 40px;   
     }
 
-    .imgsize {
+.imgsize {
         width: 45px;
     }
 `
