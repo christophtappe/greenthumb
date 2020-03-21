@@ -56,7 +56,6 @@ const CardStyled = styled.section`
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 4;
-    
   }
 
   .f3 {
