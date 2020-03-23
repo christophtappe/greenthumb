@@ -3,8 +3,6 @@ import styled from 'styled-components'
 
 export default function Card({ task, setDone }) {
   
-
-
   return (
     <CardStyled done={task.done} >
       <div className="container">
@@ -56,7 +54,6 @@ const CardStyled = styled.section`
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 4;
-    
   }
 
   .f3 {

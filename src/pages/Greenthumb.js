@@ -1,33 +1,29 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import gradient from '../gradient'
 
 export default function Greenthumb({taskCount, taskDoneCount }) {
-    console.log(taskDoneCount)
     return (
+
         <div>
             <ThumbCard>
                 <div className="card">
                     <h3>Grüner Daumen in Sicht:</h3>
-                  
-                    
-                    
-            
-            <h4>Du hast {taskDoneCount} von {taskCount} Aufgaben geschafft.</h4>
-            
-
-            <div className="Box">
-            
-            <img className="thumbColor" src="./icons/thumb_mask.png" alt=""/>
-            </div>
-            <div className="card-gradient"></div>
+                <div className="Box"> 
+                    <Thumb color={gradient[Math.floor(100 / taskCount * taskDoneCount)]} src="./icons/thumb_mask.png" alt=""/>
+                </div>
+                
+                <div className="card-gradient"></div>
+                    <h4>Du hast {taskDoneCount} von {taskCount} Aufgaben geschafft {Math.floor(100 / taskCount * taskDoneCount)}%.</h4>
                 </div>
             </ThumbCard>
-        </div>
+        </div>   
     )
-}
+};
 
-
-
+const Thumb = styled.img`
+    background-color: ${props => props.color}; 
+`
 const ThumbCard = styled.section`
     display: grid;
     margin: auto;
@@ -39,17 +35,13 @@ const ThumbCard = styled.section`
     width: 80%;
     border-radius: 5px;
     box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.4);
-
 }
+
 .box { 
     display: grid;
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: 3fr, 1fr ;
     }
-
-.thumbColor {
-    background-color: #D53F63;
-  }
 
 .card {
     margin: auto;
@@ -64,7 +56,8 @@ const ThumbCard = styled.section`
     width: 250px;
     height: 30px;
 }
-    img {
+
+img {
         width: 100%;
     }
 
