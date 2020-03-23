@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import Card from './Card'
+
 
 export default function Cards({tasks, setDone}) {
  console.log(tasks)

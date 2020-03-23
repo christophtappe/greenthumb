@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import gradient from '../gradient'
 
@@ -12,7 +12,6 @@ export default function Greenthumb({taskCount, taskDoneCount }) {
                 <div className="Box"> 
                     <Thumb color={gradient[Math.floor(100 / taskCount * taskDoneCount)]} src="./icons/thumb_mask.png" alt=""/>
                 </div>
-                
                 <div className="card-gradient"></div>
                     <h4>Du hast {taskDoneCount} von {taskCount} Aufgaben geschafft {Math.floor(100 / taskCount * taskDoneCount)}%.</h4>
                 </div>

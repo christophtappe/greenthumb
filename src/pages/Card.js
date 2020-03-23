@@ -1,13 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
+
+
 
 export default function Card({ task, setDone }) {
   
   return (
+    
     <CardStyled done={task.done} >
       <div className="container">
       <div className="f1">
     <h3 className>{task.motivation}</h3>
+    </div>
+    <div className="f5">
+      <img src={'../icons/close.svg'} alt=""/>
     </div>
     <div className="f2">
     <img src={task.icon} alt=" "/>
@@ -35,9 +41,19 @@ const CardStyled = styled.section`
 
   .container { 
     display: grid;
-    grid-template-columns: 30% 30% 40%;
+    grid-template-columns: 30% 30% 30% 10%;
     grid-template-rows: 1fr, 3fr, 2fr;
     padding: 5px 15px 15px 15px;
+  }
+
+  .f5 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 20px;
+    margin-top: 9px;
+    margin-left: 3px;
   }
  
   .f1 {
@@ -59,7 +75,7 @@ const CardStyled = styled.section`
   .f3 {
     background-color: ;
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
   }
@@ -71,6 +87,10 @@ const CardStyled = styled.section`
     grid-row-start: 3;
     grid-row-end: 4;
   }
+
+
+
+
 
   p {
     font-family: 'Roboto';
