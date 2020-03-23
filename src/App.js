@@ -11,8 +11,10 @@ import User from './pages/User'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import workData from './pages/workData'
 
+
 export default function App() {
   const [tasks, setTasks] = useState(workData);
+
 
 
   function setTaskDone (id) {
@@ -27,8 +29,9 @@ export default function App() {
   function countDoneTasks(){
    const counter = tasks.filter(task => task.done ).length
    return counter
-  }
-  
+  } 
+
+
   return (
     <Router>
       <div className="App">

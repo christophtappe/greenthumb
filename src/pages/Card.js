@@ -3,8 +3,6 @@ import styled from 'styled-components'
 
 export default function Card({ task, setDone }) {
   
-
-
   return (
     <CardStyled done={task.done} >
       <div className="container">

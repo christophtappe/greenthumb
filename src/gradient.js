@@ -1,5 +1,5 @@
 /* Verlauf mit 100 Abstufungen*/
-const gradient = [
+export default  [
     "#D53F63", "#D44063", "#D34163", "#D24262", "#D14362", "#D04462", "#CF4562", "#CE4662", "#CD4762", "#CB4861",
     "#CA4961", "#C94961", "#C84A61", "#C74B61", "#C64C61", "#C54D60", "#C44E60", "#C34F60", "#C25060", "#C15160",
     "#C05260", "#BF535F", "#BE545F", "#BD555F", "#BC565F", "#BB575F", "#B9585F", "#B8595E", "#B75A5E", "#B65B5E",
@@ -11,5 +11,7 @@ const gradient = [
     "#808B55", "#7F8C55", "#7E8D55", "#7D8E55", "#7C8F55", "#7B9055", "#7A9154", "#799254", "#789354", "#779454",
     "#769554", "#759554", "#739653", "#729753", "#719853", "#709953", "#6F9A53", "#6E9B53", "#6D9C52", "#6C9D52",
     "#6B9E52"];
+
+    
 
 /* Link Verlaufsgenerator: https://werner-zenk.de/tools/farbverlauf.php?Farbe1=D53F63&Farbe2=6B9E52&laenge=10#form */

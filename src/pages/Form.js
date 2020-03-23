@@ -18,45 +18,42 @@ export default function Form ({ onAdd }) {
         <>
         <form>
         <FormStyled>
-            
-        <h1>Schreibe Deinem Garten – <br/>ein paar nette Karten:</h1>
+            <h1>Schreibe Deinem Garten – <br/>ein paar nette Karten:</h1>
+                <p>Motivation:</p>
+                    <input 
+                    maxLength="38"
+                    className="field" 
+                    type="text" 
+                    name="motivation" 
+                    placeholder="Was motiviert dich zu dieser Aufgabe?"
+                    onChange={e => setFormValue({...formValue, motivation: e.target.value})}/>
 
-            <p>Motivation:</p>
-            <input 
-                maxLength="38"
-                className="field" 
-                type="text" 
-                name="motivation" 
-                placeholder="Was motiviert dich zu dieser Aufgabe?"
-                onChange={e => setFormValue({...formValue, motivation: e.target.value})}/>
+                <p>Aufgabe:</p>
+                    <input 
+                    maxLength="25"
+                    className="field" 
+                    type="text" 
+                    name="aufgabe" 
+                    placeholder="Was packst Du als nächstes an?"
+                    onChange={e => setFormValue({...formValue, aufgabe: e.target.value})}/>
 
-            <p>Aufgabe:</p>
-            <input 
-                maxLength="25"
-                className="field" 
-                type="text" 
-                name="aufgabe" 
-                placeholder="Was packst Du als nächstes an?"
-                onChange={e => setFormValue({...formValue, aufgabe: e.target.value})}/>
-
-            <p>Bitte passendes Icon auswählen:</p>
-            <div>
-            <img src='./icons/06-carrot.svg' alt=" "/>
-            <input type="checkbox"/>
-            <img src='./icons/02-schaufel.svg' alt=" "/>
-            <input type="checkbox"/>
-            <img src='./icons/05-seed.svg' alt=" "/>
-            <input type="checkbox"/>
-            <img src='./icons/04-schere.svg' alt=" "/>
-            <input type="checkbox"/>
-            
-            </div>
-            <h4>Alles klar? Dann:</h4>
-            <input 
-                className="button" 
-                type="submit" 
-                value="senden" 
-                onClick={save}/>
+                <p>Bitte passendes Icon auswählen:</p>
+                    <div>
+                        <img src='./icons/06-carrot.svg' alt=" "/>
+                        <input type="checkbox"/>
+                        <img src='./icons/02-schaufel.svg' alt=" "/>
+                        <input type="checkbox"/>
+                        <img src='./icons/05-seed.svg' alt=" "/>
+                        <input type="checkbox"/>
+                        <img src='./icons/04-schere.svg' alt=" "/>
+                        <input type="checkbox"/>
+                    </div>
+                <h4>Alles klar? Dann:</h4>
+                    <input 
+                        className="button" 
+                        type="submit" 
+                        value="senden" 
+                        onClick={save}/>
         </FormStyled> 
         </form>
         </>
