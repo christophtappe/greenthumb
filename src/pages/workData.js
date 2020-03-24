@@ -42,13 +42,6 @@ const workData = [
         icon: './icons/06-carrot.svg',
         done: false,
     },
-    {
-        id: 7,
-        motivation: 'Das Gartenjahr läuft noch:',
-        aufgabe: 'Neue Aufgaben eintragen.',
-        icon: './icons/07-idee.svg',
-        done: false,
-    },
 ]
 
 export default workData

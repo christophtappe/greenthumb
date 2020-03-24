@@ -19,6 +19,7 @@ export default function Cards({tasks, setDone}) {
 
 const CardContainer = styled.div`
   display: grid;
+  margin-bottom: 80px;
   gap: 45px;
   overflow-y: scroll;
 `
