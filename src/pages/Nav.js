@@ -12,14 +12,14 @@ function Nav() {
           <Link to='/Form'>
           <img src={'../icons/settings.svg'} alt="Settings"/>
           </Link>
-          <Link to='/User/'> 
+          <Link to='/User'> 
           <img className='imgsize' src={'../icons/99-chrissie.svg'} alt="User"/>
           </Link>
           <Link to='/Greenthumb'>
           <img src={'../icons/thumb.svg'} alt="Greenthumb"/>
           </Link>
-          <Link to='/Fotos/'>
-          <img src={'../icons/foto.svg'} alt="Fotos"/>
+          <Link to='/Foto'>
+          <img src={'../icons/foto.svg'} alt="Foto"/>
           </Link>
         </FooterStyled>        
       </nav>

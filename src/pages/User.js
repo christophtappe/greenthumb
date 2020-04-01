@@ -1,5 +1,4 @@
 import React from 'react'
-import Card from './Card'
 import styled from 'styled-components'
 
 export default function User() {
@@ -8,7 +7,7 @@ export default function User() {
     <CardStyled>
         <div className="container">
             <div className="f1">
-                <img src={'../icons/user-icon-chrissie.svg'}/>
+                <img src={'../icons/user-icon-chrissie.svg'} alt=" "/>
             </div>
             <div className="f2">
                 <h3>Der Hobbygärtner</h3>
@@ -21,7 +20,7 @@ export default function User() {
                 <p className='size'>(latein.: Hosta sieboldiana, Blaublatt-Funkie)</p>
             </div>
         </div>
-        <h3 className="headline">Du hast bisher -?- Aufgaben erfüllt.</h3>
+        
         </CardStyled>
     </>
 

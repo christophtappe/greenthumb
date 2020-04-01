@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import Card from './Card'
+
 
 export default function Cards({tasks, setDone}) {
  console.log(tasks)
@@ -18,6 +19,7 @@ export default function Cards({tasks, setDone}) {
 
 const CardContainer = styled.div`
   display: grid;
+  margin-bottom: 80px;
   gap: 45px;
   overflow-y: scroll;
 `
