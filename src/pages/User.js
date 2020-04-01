@@ -20,7 +20,7 @@ export default function User() {
                 <p className='size'>(latein.: Hosta sieboldiana, Blaublatt-Funkie)</p>
             </div>
         </div>
-        <h3 className="headline">Du hast bisher -?- Aufgaben erfüllt.</h3>
+        
         </CardStyled>
     </>
 

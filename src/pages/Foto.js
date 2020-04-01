@@ -2,52 +2,62 @@ import React from 'react'
 import styled from 'styled-components'
 
 export default function Foto() {
+    
     return (
         <FotoLayer>
             <div className="container">
-                <div className="main">
                     <h3>Zeige Deinen Garten von seiner schönsten Seite.</h3>
-                </div>
-            <div className="text">
-                <p>Auch im stürmischen Herbst oder im regnerischen Winter findest Du hier Deinen Platz an der Sonne.
+                <p className="text">Auch im stürmischen Herbst oder im regnerischen Winter findest Du hier Deinen Platz an der Sonne.
                     Vorausgesetzt, Du hast Deinen Garten verschönert! Und ein paar eindrucksvolle Vorher-Nachher-Fotos hochgeladen.
                 </p>
-            </div>
+            <h4>Nur ein <span><i>Klick</i></span> bis zum Paradies:</h4>
+          
+         <img className="garden" src="../Fotos/Garten_before.jpg" alt=""/>
+         <img className="garden-after" src="../Fotos/Garten_after.jpg" alt=""/>
+        
             </div> 
-                
-            <h4>Das Paradies.</h4>
-                <div>
-                    <img src="IMG_0402.jpg" alt=""/>
-                </div>   
-            </FotoLayer>
+        
+
+        </FotoLayer>
     )
 }
 
 const FotoLayer = styled.section`
-    display: flex;
-    flex-wrap: wrap;
     margin: auto;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 150px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     width: 90%;
-
-    border-radius: 5px;
-    overflow-y: scroll;
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: auto;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr auto;
 }
 
-.main {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
+.garden {   
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    justify-content: center;
+    margin-left: 10px;
+    border: 5px solid white;
+    box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.4);
+    transform: rotate(-3deg);
+    }
+
+.garden-after {   
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    justify-content: center;
+    margin-left: 10px;
+    border: 5px solid white;
+    box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.4);
+    transform: rotate(-3deg);
+    }
 
 .text {
     grid-column-start: 1;
@@ -56,36 +66,32 @@ const FotoLayer = styled.section`
     grid-row-end:3;
 }
 
-.icon {
+p { 
     grid-column-start: 2;
-    grid-column-edn: 3;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-
-p {
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-bottom: -15px;
     font-size: 12px;
     color: #333333;
 }
  
-img {
-        width: 60%;
-        border: 8px solid white;
-        box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.4);
-        transform: rotate(-3deg);
-        
+h3 {    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    color: #6b9e52;
+    text-align: center;
+    margin-bottom: -20px;
     }
-
-    h3 {
-        color: #6b9e52;
-        text-align: center;
-    }
-
-    h4 {
-        text-align: center;
+    
+h4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
         color: #333333;
-        margin-top: -10px;
+        text-align: center;
     }
-
-
     `

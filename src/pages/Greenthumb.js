@@ -12,6 +12,7 @@ export default function Greenthumb({taskCount, taskDoneCount }) {
                 <div className="Box"> 
                     <Thumb color={gradient[Math.floor(100 / taskCount * taskDoneCount)]} src="./icons/thumb_mask.png" alt=""/>
                 </div>
+                <div className="level"></div>
                 <div className="card-gradient"></div>
                     <h4>Du hast {taskDoneCount} von {taskCount} Aufgaben geschafft {Math.floor(100 / taskCount * taskDoneCount)}%.</h4>
                 </div>
@@ -34,6 +35,15 @@ const ThumbCard = styled.section`
     width: 80%;
     border-radius: 5px;
     box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.4);
+}
+
+.level {
+    width: 3px;
+    height: 25px;
+    margin-bottom: 0px;
+    background-color: #333333;
+
+
 }
 
 .box { 
