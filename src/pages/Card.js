@@ -1,33 +1,29 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
-
 export default function Card({ task, setDone }) {
-  
   return (
-    
-    <CardStyled done={task.done} >
-       
+    <CardStyled done={task.done}>
       <div className="container">
-      <div className="f1">
-    <h3 className>{task.motivation}</h3>
-    </div>
-    <div className="f5">
-      <img src={'../icons/close.svg'} alt=""/>
-    </div>
-    <div className="f2">
-    <img src={task.icon} alt=" "/>
-    </div>
-    <div className="f3">
-    <h1>{task.aufgabe}</h1> 
-    </div>
-    <div className="f4">
-    <button className="Button" onClick={() => setDone(task.id)}>Erledigt? Klicken! </button>
-    </div>
-    </div>
-    
-  </CardStyled >  
+        <div className="f1">
+          <h3>{task.motivation}</h3>
+        </div>
+        <div className="f5">
+          <img src={'../icons/close.svg'} alt="" />
+        </div>
+        <div className="f2">
+          <img src={task.icon} alt=" " />
+        </div>
+        <div className="f3">
+          <h1>{task.aufgabe}</h1>
+        </div>
+        <div className="f4">
+          <button className="Button" onClick={() => setDone(task.id)}>
+            Erledigt? Klicken!{' '}
+          </button>
+        </div>
+      </div>
+    </CardStyled>
   )
 }
 
@@ -41,7 +37,7 @@ const CardStyled = styled.section`
   border-radius: 5px;
   box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.4);
 
-  .container { 
+  .container {
     display: grid;
     grid-template-columns: 30% 30% 30% auto;
     grid-template-rows: 5px, 1fr, 3fr, 2fr;
@@ -58,7 +54,7 @@ const CardStyled = styled.section`
     margin-top: 3px;
     margin-left: 3px;
   }
- 
+
   .f1 {
     grid-column-start: 1;
     grid-column-end: 5;
@@ -67,7 +63,7 @@ const CardStyled = styled.section`
   }
 
   .f2 {
-    grid-column-start:1;
+    grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
@@ -90,27 +86,26 @@ const CardStyled = styled.section`
 
   p {
     font-family: 'Roboto';
-    color: #5E918e;
+    color: #5e918e;
   }
 
   h1 {
-      margin-top: -5px;
-      margin-bottom: -1px; 
-      color: ${(props) => props.done ? '#6b9e52' : '#d53f63' };
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 22px;
-      padding-left: 12px;
-    
+    margin-top: -5px;
+    margin-bottom: -1px;
+    color: ${props => (props.done ? '#6b9e52' : '#d53f63')};
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    padding-left: 12px;
   }
 
   h3 {
-      margin-top: 0px;  
-      color: #333333;
-      font-size: 14px;
-      font-weight: 500;
-      text-align: center;
-      align-self: start;
+    margin-top: 0px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    align-self: start;
   }
 
   .overline {
@@ -138,10 +133,5 @@ const CardStyled = styled.section`
     height: 20px;
     background-color: #cadad9;
     border-radius: 3px;
-  
   }
-
 `
-
-
-
