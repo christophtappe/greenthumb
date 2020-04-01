@@ -2,10 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Card from './Card'
 
-
-export default function Cards({tasks, setDone}) {
- console.log(tasks)
-
+export default function Cards({ tasks, setDone }) {
   return (
     <>
       <CardContainer>
@@ -23,9 +20,3 @@ const CardContainer = styled.div`
   gap: 45px;
   overflow-y: scroll;
 `
-
-/*const Containerall = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`*/
